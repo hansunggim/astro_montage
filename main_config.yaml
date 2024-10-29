@@ -1,0 +1,19 @@
+global_parameters:
+  size_arcsec: "9.0"
+  crop_box: "(45,39,323,317)"
+  target_size: "(160,160)"
+  number_figures_per_page: "7"
+
+global_files:
+  cat_file: "/Volumes/Galaxy/JWST/JWIDF/multi/matching/radio_counterparts.csv"
+  radio_file: "/Volumes/Galaxy/JWST/JWIDF/radio/VLA_JWIDF_150mas_scaled_sci.fits"
+  hst_files:
+    - "/Volumes/Galaxy/JWST/JWIDF/multi/data/HST_ACS_JWIDF_60mas_AllEp_all/HST_ACS_JWIDF_F435W_60mas_sci.fits"
+    - "/Volumes/Galaxy/JWST/JWIDF/multi/data/HST_ACS_JWIDF_60mas_AllEp_all/HST_ACS_JWIDF_F606W_60mas_sci.fits"
+    -  "/Volumes/Galaxy/JWST/JWIDF/multi/data/HST_ACS_JWIDF_60mas_AllEp_all/HST_ACS_JWIDF_F814W_60mas_sci.fits"
+  jwst_files:
+    - "/Volumes/Galaxy/JWST/JWIDF/multi/data/JWST_PEARLS_IDF_modAB_ep123_60mas_scaled/JWST_PEARLS_IDF_F150W_modAB_ep123_60mas_scaled_sci.fits"
+    - "/Volumes/Galaxy/JWST/JWIDF/multi/data/JWST_PEARLS_IDF_modAB_ep123_60mas_scaled/JWST_PEARLS_IDF_F200W_modAB_ep123_60mas_scaled_sci.fits"
+    - "/Volumes/Galaxy/JWST/JWIDF/multi/data/JWST_PEARLS_IDF_modAB_ep123_60mas_scaled/JWST_PEARLS_IDF_F356W_modAB_ep123_60mas_scaled_sci.fits"
+    - "/Volumes/Galaxy/JWST/JWIDF/multi/data/JWST_PEARLS_IDF_modAB_ep123_60mas_scaled/JWST_PEARLS_IDF_F444W_modAB_ep123_60mas_scaled_sci.fits"
+
