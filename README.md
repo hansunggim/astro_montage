@@ -21,7 +21,7 @@ Please reach out to me (cosmologist.hs@gmail.com) if you have any questions.
 
 0. Prerequisite programs
 
-  Following packages should be installed, astrocut v0.11.0, astropy v6.1.0, scipy v1.13.0, matplotlib v3.9.0, numpy v1.26.4, pandas v2.2.2, PyPDF2 v3.0.1, pdf2image v1.17.0, pillow v10.3.0, and reportlab v4.2.0
+  Following packages should be installed: astrocut v0.11.0, astropy v6.1.0, scipy v1.13.0, matplotlib v3.9.0, numpy v1.26.4, pandas v2.2.2, PyPDF2 v3.0.1, pdf2image v1.17.0, pillow v10.3.0, and reportlab v4.2.0
    
 1. Usage
   > ./montage.sh
