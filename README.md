@@ -17,7 +17,7 @@ using the Astrocut program. It runs six python scripts sequentially and removes 
 Users need to modify the "main_config.yaml" file for input parameters and files. 
 This program uses the following python libraries: Astrocut, Astropy, Scipy, Matplotlib, Numpy, Pandas, PyPDF2, pdf2image, pillow, and Reportlab. This program works with the most up-to-date versions of libraries within Python 3.12.3. 
 
-Please reach out to me (cosmologist.hs@gmail.com) if you have any questions. 
+Please reach out to me (hansung.b.gim@gmail.com) if you have any questions. 
 
 0. Prerequisite Python packages 
 
