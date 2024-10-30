@@ -19,22 +19,27 @@ This program uses the following python libraries: Astrocut, Astropy, Scipy, Matp
 
 Please reach out to me (cosmologist.hs@gmail.com) if you have any questions. 
 
-0. Prerequisite programs
+0. Prerequisite Python packages 
 
-  Following packages should be installed: astrocut v0.11.0, astropy v6.1.0, scipy v1.13.0, matplotlib v3.9.0, numpy v1.26.4, pandas v2.2.2, PyPDF2 v3.0.1, pdf2image v1.17.0, pillow v10.3.0, and reportlab v4.2.0
+  The following packages should be installed: astrocut v0.11.0, astropy v6.1.0, scipy v1.13.0, matplotlib v3.9.0, numpy v1.26.4, pandas v2.2.2, PyPDF2 v3.0.1, pdf2image v1.17.0, pillow v10.3.0, and reportlab v4.2.0
    
 1. Usage
   > ./montage.sh
 
+2. Input data file
 
-2. main_config.yaml
+  The input data file should be in comma-separated values (CSV) format and include column names such as ID, RA, DEC, Major, Minor, and PA. 
+
+  
+
+3. main_config.yaml
    
   This file is the input file that will be read by the subscripts. It is encoded in YAML. In this file, users set global parameters and global files. For the global parameters, users are required to set the cutout size in arcseconds (size_arcsec), positions (bottom left and top right) for cropping (crop_box), rescaled size of cutouts in pixels (target_size), and the number of figures per page (number_figures_per_page). For the global files, users provide the catalog file including ID, RA, DEC, Major (Major Axis), Minor (Minor Axis), PA (Position Angle) of radio sources, as well as the radio FITS image file, HST image files, and JWST image files. Here, the radio FITS image file must have two (2) dimensions to work with the astrocut. Astrocut cannot handle three- or four-dimensional FITS image files, while most radio FITS image files have four (4) dimensions including RA, DEC, Frequency, and Stokes. Usres must reduce the dimensions of radio FITS image to TWO. 
 
 
 
 
-3. Subscripts
+4. Subscripts
    
   (1) montage_radio.py
 
