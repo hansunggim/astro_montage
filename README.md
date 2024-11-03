@@ -12,8 +12,7 @@
 ###
 ############################################################
 
-This program is designed to generate the image montages by combining cutouts from radio, HST, and JWST images 
-using the Astrocut program. It runs six python scripts sequentially and removes byproduct files. 
+This program is designed to generate image montages by combining cutouts from radio, HST, and JWST images using the Astrocut program, which provides cutouts with specified RA and DEC. It runs six Python scripts sequentially and removes byproduct files. 
 Users need to modify the "main_config.yaml" file for input parameters and files. 
 This program uses the following python libraries: Astrocut, Astropy, Scipy, Matplotlib, Numpy, Pandas, PyPDF2, pdf2image, pillow, and Reportlab. This program works with the most up-to-date versions of libraries within Python 3.12.3. 
 
@@ -34,7 +33,7 @@ Please reach out to me (hansung.b.gim@gmail.com) if you have any questions.
 
 3. main_config.yaml
    
-  This file is the input file that will be read by the subscripts. It is encoded in YAML. In this file, users set global parameters and global files. For the global parameters, users are required to set the cutout size in arcseconds (size_arcsec), positions (bottom left and top right) for cropping (crop_box), rescaled size of cutouts in pixels (target_size), and the number of figures per page (number_figures_per_page). For the global files, users provide the catalog file including ID, RA, DEC, Major (Major Axis), Minor (Minor Axis), PA (Position Angle) of radio sources, as well as the radio FITS image file, HST image files, and JWST image files. Here, the radio FITS image file must have two (2) dimensions to work with the astrocut. Astrocut cannot handle three- or four-dimensional FITS image files, while most radio FITS image files have four (4) dimensions including RA, DEC, Frequency, and Stokes. Users must reduce the dimensions of radio FITS image to TWO. 
+  This file is the input file that will be read by the subscripts. It is encoded in YAML. In this file, users set global parameters and global files. For the global parameters, users are required to set the cutout size in arcseconds (size_arcsec), positions (bottom left and top right) for cropping (crop_box), rescaled size of cutouts in pixels (target_size), and the number of figures per page (number_figures_per_page). For the global files, users provide the catalog file including ID, RA, DEC, Major (Major Axis), Minor (Minor Axis), PA (Position Angle) of radio sources, as well as the radio FITS image file, HST image files, and JWST image files. Here, the radio FITS image file must have two (2) dimensions to work with the astrocut. Astrocut cannot handle three- or four-dimensional FITS image files, while most radio FITS image files have four (4) dimensions, including RA, DEC, Frequency, and Stokes. Users must reduce the dimensions of radio FITS image to TWO. 
 
 
 
@@ -43,7 +42,7 @@ Please reach out to me (hansung.b.gim@gmail.com) if you have any questions.
    
   (1) montage_radio.py
 
-  This script makes the cutouts from the radio image and saves them to a pdf. The outfile name is montage_{ID}_0.pdf
+  This script makes the cutouts from the radio image and saves them to a pdf. The out file name is montage_{ID}_0.pdf
 
 
   (2) montage_optical.py
@@ -62,7 +61,7 @@ Please reach out to me (hansung.b.gim@gmail.com) if you have any questions.
 
   (5) pdf_generating_figure.py
 
-  This script generates a PDF file including multiple combined figures on the same page. The number of IDs included on the same page is set by "number_figures_per_page" in the main_config.yaml
+  This script generates a PDF file that includes multiple combined figures on the same page. The number of IDs included on the same page is set by "number_figures_per_page" in the main_config.yaml
 
 
   (6) clear_files.py
