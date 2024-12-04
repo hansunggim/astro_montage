@@ -12,7 +12,7 @@
 ###
 ############################################################
 
-This program is designed to generate image montages by combining cutouts from radio, HST, and JWST images using the Astrocut program, which provides cutouts with specified RA and DEC. It runs six Python scripts sequentially and removes byproduct files. 
+This program is designed to generate postage stamps by combining cutouts from radio, HST, and JWST images using the Astrocut program, which provides cutouts with specified RA and DEC. It runs six Python scripts sequentially and removes byproduct files. 
 Users need to modify the "main_config.yaml" file for input parameters and files. 
 This program uses the following python libraries: Astrocut, Astropy, Scipy, Matplotlib, Numpy, Pandas, PyPDF2, pdf2image, pillow, and Reportlab. This program works with the most up-to-date versions of libraries within Python 3.12.3. 
 
